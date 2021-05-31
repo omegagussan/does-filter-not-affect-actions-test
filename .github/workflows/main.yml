@@ -1,0 +1,20 @@
+name: Actions
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  my-action:
+    name: This is one action I have
+    runs-on: ubuntu-latest
+
+    env:
+      MY_ENV: 1234567
+
+    steps:
+      - name: Checkout source Git repo
+        uses: actions/checkout@v2
+
+      - name: Do stuff
+        run: echo 'I ran this'
