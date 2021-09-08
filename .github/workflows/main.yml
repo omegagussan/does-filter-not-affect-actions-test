@@ -2,7 +2,7 @@ name: Actions
 
 on:
   push:
-    branches: [ main ]
+    branches: [ test-GITHUB-REF ]
 
 jobs:
   my-action:
