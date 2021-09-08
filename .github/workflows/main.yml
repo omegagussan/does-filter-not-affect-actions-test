@@ -5,6 +5,13 @@ on:
     branches: [ main ]
 
 jobs:
+  my-build-number:
+    runs-on: ubuntu-latest
+    name: buildnumber-${{ github.sha }}
+    steps:
+      - name: Dummy
+        run: echo 'dummy'
+    
   my-action:
     name: This is one action I have
     runs-on: ubuntu-latest
