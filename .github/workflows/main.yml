@@ -3,7 +3,9 @@ name: Actions
 on:
   push:
     branches: [ test-GITHUB-ref ]
-
+  pull_request:
+    branches: [ main ]
+    
 jobs:
   my-action:
     name: This is one action I have
